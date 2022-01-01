@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne">
+    <Prefix name="" IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontologia prezentująca zagadnienie postępowania cywilnego</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.10</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>Andrzej Greńczuk</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>Uniwersytet Ekonomiczny we Wrocławiu</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Apelacyjny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Okręgowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rejonowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rodzaje_sądów"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sąd_Najwyższy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zakres_działalności_sądu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zakres_podmiotowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zakres_przedmiotowy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AdresEmail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AdresWWW"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Adres_sądu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DaneKontaktowe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Miejscowość"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NazwaSądu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TelefonSądu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#WartośćPrzedmiotuSporu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sąd_Apelacyjny"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sąd_Najwyższy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sąd_Okręgowy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sąd_Rejonowy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:Author"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:University"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Apelacyjny"/>
+        <Class IRI="#Rodzaje_sądów"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Okręgowy"/>
+        <Class IRI="#Rodzaje_sądów"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rejonowy"/>
+        <Class IRI="#Rodzaje_sądów"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sąd_Najwyższy"/>
+        <Class IRI="#Rodzaje_sądów"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zakres_podmiotowy"/>
+        <Class IRI="#Zakres_działalności_sądu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zakres_przedmiotowy"/>
+        <Class IRI="#Zakres_działalności_sądu"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Apelacyjny"/>
+        <NamedIndividual IRI="#Sąd_Apelacyjny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sąd_Najwyższy"/>
+        <NamedIndividual IRI="#Sąd_Najwyższy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Okręgowy"/>
+        <NamedIndividual IRI="#Sąd_Okręgowy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rejonowy"/>
+        <NamedIndividual IRI="#Sąd_Rejonowy"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Miejscowość"/>
+        <NamedIndividual IRI="#Sąd_Najwyższy"/>
+        <Literal>Warszawa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NazwaSądu"/>
+        <NamedIndividual IRI="#Sąd_Najwyższy"/>
+        <Literal>Sąd Najwyższy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TelefonSądu"/>
+        <NamedIndividual IRI="#Sąd_Najwyższy"/>
+        <Literal>22 530 83 34</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AdresEmail"/>
+        <DataProperty IRI="#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AdresWWW"/>
+        <DataProperty IRI="#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Adres_sądu"/>
+        <DataProperty IRI="#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Miejscowość"/>
+        <DataProperty IRI="#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#NazwaSądu"/>
+        <DataProperty IRI="#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TelefonSądu"/>
+        <DataProperty IRI="#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TelefonSądu"/>
+        <Class IRI="#Rodzaje_sądów"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#WartośćPrzedmiotuSporu"/>
+        <Class IRI="#Zakres_przedmiotowy"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AdresEmail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AdresWWW"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Adres_sądu"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Miejscowość"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NazwaSądu"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TelefonSądu"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#WartośćPrzedmiotuSporu"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

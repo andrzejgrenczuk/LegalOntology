@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek">
+    <Prefix name="" IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:Author"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mgr Andrzej Greńczuk</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:University"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Uniwersytet Ekonomiczny we Wrocławiu</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&xsd;decimal">0.10</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ontologia prezentująca wybrany fragment rzeczywistości prawnej, skupionej wokół przepisów dotyczących przepisów prawnych regulujących prawo spółek handlowych.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Akty_prawa_miejscowego"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Centralna_ewidencja_działalności_gospodarczej"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kapitałowe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Konstytucja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Krajowy_Rejestr_Sądowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Likwidacja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organy_Rejestrowe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Osobowe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Podmioty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powstanie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pozostałe_regulacje"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prawo_europejskie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prawo_handlowe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prawo_krajowe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prawo_miedzynarodowe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prawo_spółek_handlowych"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Przekształcanie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ratyfikowana_umowa_międzynarodowa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rozporządzenie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_aktów_prawnych"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Typy_spółek"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ustawa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zasieg_terytorialny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Łączenie"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#jest_częścią"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#jest_regulowane"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#kapitał_wynosi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mogą_się_odwoływać"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#może_być_utworzona_przez"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#może_prowadzić_działalność"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nie_może_być_sprzeczne_z"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#określa_przepisy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#podlega_wpisowi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#podlega_wykreśleniu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#zawiera_dodatkowe_regulacje"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#została_uregulowana_w"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataUchwalenia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DataWejsciaWŻycie"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MiejscePublikacji"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Treść"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5000zł"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Centralna_ewidencja_działalności_gospodarczej"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dowolna_niezabroniona_przepisami"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Działalność_bankowa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Krajowy_Rejestr_Sądowy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Osoba_fizyczna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Osoba_prawna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Podpisanie_statutu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Powszechne_towarzystwa_emerytalne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prosta_spółka_akcyjna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spółka_akcyjna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spółka_jawna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spółka_komandytowa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spółka_komandytowo-akcyjna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spółka_partnerska"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spółka_z_ograniczoną_odpowiedzialnością"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wniesienie_wkładów"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zakłady_ubezpieczeń"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zawarcie_umowy_spółki"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:Author"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:University"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Akty_prawa_miejscowego"/>
+        <Class IRI="#System_aktów_prawnych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Centralna_ewidencja_działalności_gospodarczej"/>
+        <Class IRI="#Organy_Rejestrowe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kapitałowe"/>
+        <Class IRI="#Typy_spółek"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Konstytucja"/>
+        <Class IRI="#System_aktów_prawnych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Krajowy_Rejestr_Sądowy"/>
+        <Class IRI="#Organy_Rejestrowe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Likwidacja"/>
+        <Class IRI="#Prawo_spółek_handlowych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Osobowe"/>
+        <Class IRI="#Typy_spółek"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powstanie"/>
+        <Class IRI="#Prawo_spółek_handlowych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pozostałe_regulacje"/>
+        <Class IRI="#Prawo_handlowe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pozostałe_regulacje"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mogą_się_odwoływać"/>
+            <Class IRI="#Prawo_spółek_handlowych"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prawo_europejskie"/>
+        <Class IRI="#Zasieg_terytorialny"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prawo_krajowe"/>
+        <Class IRI="#Zasieg_terytorialny"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prawo_miedzynarodowe"/>
+        <Class IRI="#Zasieg_terytorialny"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prawo_spółek_handlowych"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#jest_częścią"/>
+            <Class IRI="#Prawo_handlowe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prawo_spółek_handlowych"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mogą_się_odwoływać"/>
+            <Class IRI="#Pozostałe_regulacje"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Przekształcanie"/>
+        <Class IRI="#Prawo_spółek_handlowych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ratyfikowana_umowa_międzynarodowa"/>
+        <Class IRI="#System_aktów_prawnych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rozporządzenie"/>
+        <Class IRI="#System_aktów_prawnych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ustawa"/>
+        <Class IRI="#System_aktów_prawnych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ustawa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#jest_częścią"/>
+            <Class IRI="#Prawo_krajowe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ustawa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#określa_przepisy"/>
+            <Class IRI="#Prawo_handlowe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ustawa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#określa_przepisy"/>
+            <Class IRI="#Prawo_spółek_handlowych"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Łączenie"/>
+        <Class IRI="#Prawo_spółek_handlowych"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Likwidacja"/>
+        <Class IRI="#Powstanie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Likwidacja"/>
+        <Class IRI="#Przekształcanie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Likwidacja"/>
+        <Class IRI="#Łączenie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Rozporządzenie"/>
+        <Class IRI="#Ustawa"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Centralna_ewidencja_działalności_gospodarczej"/>
+        <NamedIndividual IRI="#Centralna_ewidencja_działalności_gospodarczej"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pozostałe_regulacje"/>
+        <NamedIndividual IRI="#Dowolna_niezabroniona_przepisami"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pozostałe_regulacje"/>
+        <NamedIndividual IRI="#Działalność_bankowa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Prawo_spółek_handlowych"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Krajowy_Rejestr_Sądowy"/>
+        <NamedIndividual IRI="#Krajowy_Rejestr_Sądowy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Podmioty"/>
+        <NamedIndividual IRI="#Osoba_fizyczna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Podmioty"/>
+        <NamedIndividual IRI="#Osoba_prawna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Powstanie"/>
+        <NamedIndividual IRI="#Podpisanie_statutu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pozostałe_regulacje"/>
+        <NamedIndividual IRI="#Powszechne_towarzystwa_emerytalne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kapitałowe"/>
+        <NamedIndividual IRI="#Prosta_spółka_akcyjna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kapitałowe"/>
+        <NamedIndividual IRI="#Spółka_akcyjna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Osobowe"/>
+        <NamedIndividual IRI="#Spółka_jawna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Osobowe"/>
+        <NamedIndividual IRI="#Spółka_komandytowa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Osobowe"/>
+        <NamedIndividual IRI="#Spółka_komandytowo-akcyjna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Osobowe"/>
+        <NamedIndividual IRI="#Spółka_partnerska"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kapitałowe"/>
+        <NamedIndividual IRI="#Spółka_z_ograniczoną_odpowiedzialnością"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Powstanie"/>
+        <NamedIndividual IRI="#Wniesienie_wkładów"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pozostałe_regulacje"/>
+        <NamedIndividual IRI="#Zakłady_ubezpieczeń"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Powstanie"/>
+        <NamedIndividual IRI="#Zawarcie_umowy_spółki"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#podlega_wpisowi"/>
+        <NamedIndividual IRI="#Krajowy_Rejestr_Sądowy"/>
+        <NamedIndividual IRI="#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#została_uregulowana_w"/>
+        <NamedIndividual IRI="#Prosta_spółka_akcyjna"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#może_prowadzić_działalność"/>
+        <NamedIndividual IRI="#Spółka_akcyjna"/>
+        <NamedIndividual IRI="#Działalność_bankowa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#może_prowadzić_działalność"/>
+        <NamedIndividual IRI="#Spółka_akcyjna"/>
+        <NamedIndividual IRI="#Zakłady_ubezpieczeń"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#może_prowadzić_działalność"/>
+        <NamedIndividual IRI="#Spółka_akcyjna"/>
+        <NamedIndividual IRI="#Powszechne_towarzystwa_emerytalne"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#może_prowadzić_działalność"/>
+        <NamedIndividual IRI="#Spółka_akcyjna"/>
+        <NamedIndividual IRI="#Dowolna_niezabroniona_przepisami"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#podlega_wpisowi"/>
+        <NamedIndividual IRI="#Spółka_akcyjna"/>
+        <NamedIndividual IRI="#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#została_uregulowana_w"/>
+        <NamedIndividual IRI="#Spółka_akcyjna"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#podlega_wpisowi"/>
+        <NamedIndividual IRI="#Spółka_jawna"/>
+        <NamedIndividual IRI="#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#została_uregulowana_w"/>
+        <NamedIndividual IRI="#Spółka_jawna"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#podlega_wpisowi"/>
+        <NamedIndividual IRI="#Spółka_komandytowa"/>
+        <NamedIndividual IRI="#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#została_uregulowana_w"/>
+        <NamedIndividual IRI="#Spółka_komandytowa"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#jest_regulowane"/>
+        <NamedIndividual IRI="#Spółka_komandytowo-akcyjna"/>
+        <NamedIndividual IRI="#Spółka_komandytowa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#jest_regulowane"/>
+        <NamedIndividual IRI="#Spółka_komandytowo-akcyjna"/>
+        <NamedIndividual IRI="#Spółka_akcyjna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#podlega_wpisowi"/>
+        <NamedIndividual IRI="#Spółka_komandytowo-akcyjna"/>
+        <NamedIndividual IRI="#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#została_uregulowana_w"/>
+        <NamedIndividual IRI="#Spółka_komandytowo-akcyjna"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#podlega_wpisowi"/>
+        <NamedIndividual IRI="#Spółka_partnerska"/>
+        <NamedIndividual IRI="#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#została_uregulowana_w"/>
+        <NamedIndividual IRI="#Spółka_partnerska"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#kapitał_wynosi"/>
+        <NamedIndividual IRI="#Spółka_z_ograniczoną_odpowiedzialnością"/>
+        <NamedIndividual IRI="#5000zł"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#może_być_utworzona_przez"/>
+        <NamedIndividual IRI="#Spółka_z_ograniczoną_odpowiedzialnością"/>
+        <NamedIndividual IRI="#Osoba_fizyczna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#może_być_utworzona_przez"/>
+        <NamedIndividual IRI="#Spółka_z_ograniczoną_odpowiedzialnością"/>
+        <NamedIndividual IRI="#Osoba_prawna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#podlega_wpisowi"/>
+        <NamedIndividual IRI="#Spółka_z_ograniczoną_odpowiedzialnością"/>
+        <NamedIndividual IRI="#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#została_uregulowana_w"/>
+        <NamedIndividual IRI="#Spółka_z_ograniczoną_odpowiedzialnością"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataUchwalenia"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+        <Literal datatypeIRI="&xsd;dateTime">2000-09-14T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DataWejsciaWŻycie"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+        <Literal datatypeIRI="&xsd;dateTime">2000-01-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#MiejscePublikacji"/>
+        <NamedIndividual IRI="#Kodeks_spółek_handlowych"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dziennik Ustaw</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Treść"/>
+        <NamedIndividual IRI="#Osoba_fizyczna"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Każdy człowiek w chwili urodzenia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Treść"/>
+        <NamedIndividual IRI="#Osoba_prawna"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">art. 33 Kodeksu cywilnego: &quot;Osobami prawnymi są Skarb Państwa i jednostki organizacyjne, którym przepisy szczególne przyznają osobowość prawną&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyRange>
+        <DataProperty IRI="#DataUchwalenia"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DataWejsciaWŻycie"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MiejscePublikacji"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Treść"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
