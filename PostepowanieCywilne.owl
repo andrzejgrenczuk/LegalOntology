@@ -71,6 +71,9 @@
         <DataProperty IRI="#NazwaSądu"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#StatusOsoby"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#TelefonSądu"/>
     </Declaration>
     <Declaration>
@@ -209,6 +212,12 @@
         <DataProperty IRI="#WartośćPrzedmiotuSporu"/>
         <Datatype abbreviatedIRI="xsd:long"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StatusOsoby</IRI>
+        <Literal>0 - osoba fizyczna
+1 - osoba prawna</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

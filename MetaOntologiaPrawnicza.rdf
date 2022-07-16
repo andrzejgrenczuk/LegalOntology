@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#"
+     xml:base="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:metaonto="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza"
+     xmlns:prawospolek="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#"
+     xmlns:postepowaniecywilne="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#"
+     xmlns:metaontologiaprawnicza="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza">
+        <owl:imports rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek"/>
+        <rdfs:comment>Andrzej Greńczuk</rdfs:comment>
+        <rdfs:comment>Metaontologia prawnicza składająca z się z pomniejszych dziedzinowych i tematycznych ontologii</rdfs:comment>
+        <rdfs:comment>Uniwersytet Ekonomiczny we Wrocławiu</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.10</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Author -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#Author"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#University -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#University"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#jest_prowadzony_przez -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#jest_prowadzony_przez"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy">
+        <jest_prowadzony_przez rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Rejonowy"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jestRegulowane</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_regulowane"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,874 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/andrz/ontologies/2022/4/MetaOnto_complete"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/andrz/ontologies/2022/4/MetaOnto_complete">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Metaontologia prawnicza składająca z się z pomniejszych dziedzinowych i tematycznych ontologii</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontologia prezentująca wybrany fragment rzeczywistości prawnej, skupionej wokół przepisów dotyczących przepisów prawnych regulujących prawo spółek handlowych.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontologia prezentująca zagadnienie postępowania cywilnego</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:Author"/>
+        <Literal>Andrzej Greńczuk</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:Author"/>
+        <Literal>mgr Andrzej Greńczuk</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:University"/>
+        <Literal>Uniwersytet Ekonomiczny we Wrocławiu</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.10</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>Andrzej Greńczuk</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>Uniwersytet Ekonomiczny we Wrocławiu</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Apelacyjny"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#MiejscePublikacji"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Miejscowość"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ustawa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_być_utworzona_przez"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_krajowe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_z_ograniczoną_odpowiedzialnością"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zawarcie_umowy_spółki"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Konstytucja"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#NazwaSądu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Treść"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Rejonowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podmioty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zasieg_terytorialny"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#TelefonSądu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Apelacyjny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Przekształcanie"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:Author"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powszechne_towarzystwa_emerytalne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:University"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Okręgowy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podpisanie_statutu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#DataWejsciaWŻycie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_prawna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Wniesienie_wkładów"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Rozporządzenie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_działalności_sądu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#AdresEmail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Działalność_bankowa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_regulowane"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#AdresWWW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_podmiotowy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zakłady_ubezpieczeń"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Adres_sądu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_częścią"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Dowolna_niezabroniona_przepisami"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#jest_prowadzony_przez"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_prowadzić_działalność"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_przedmiotowy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#kapitał_wynosi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowo-akcyjna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#mogą_się_odwoływać"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#DataUchwalenia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_fizyczna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rejonowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ratyfikowana_umowa_międzynarodowa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#5000zł"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Akty_prawa_miejscowego"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_europejskie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#określa_przepisy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#została_uregulowana_w"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_miedzynarodowe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#WartośćPrzedmiotuSporu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#podlega_wpisowi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Okręgowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kapitałowe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_jawna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Łączenie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_partnerska"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Likwidacja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prosta_spółka_akcyjna"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Apelacyjny"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Okręgowy"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rejonowy"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_podmiotowy"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_działalności_sądu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_przedmiotowy"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_działalności_sądu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Akty_prawa_miejscowego"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kapitałowe"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Konstytucja"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Likwidacja"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#mogą_się_odwoływać"/>
+            <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_europejskie"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zasieg_terytorialny"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_krajowe"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zasieg_terytorialny"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_miedzynarodowe"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zasieg_terytorialny"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_częścią"/>
+            <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#mogą_się_odwoływać"/>
+            <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Przekształcanie"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ratyfikowana_umowa_międzynarodowa"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Rozporządzenie"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ustawa"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ustawa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_częścią"/>
+            <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_krajowe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ustawa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#określa_przepisy"/>
+            <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ustawa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#określa_przepisy"/>
+            <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Łączenie"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Likwidacja"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Likwidacja"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Przekształcanie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Likwidacja"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Łączenie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Rozporządzenie"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ustawa"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Apelacyjny"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Apelacyjny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Apelacyjny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Okręgowy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Okręgowy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Okręgowy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rejonowy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Rejonowy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Rejonowy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Dowolna_niezabroniona_przepisami"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Dowolna_niezabroniona_przepisami"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Działalność_bankowa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Działalność_bankowa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podmioty"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_fizyczna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podmioty"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_prawna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podpisanie_statutu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podpisanie_statutu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powszechne_towarzystwa_emerytalne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powszechne_towarzystwa_emerytalne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kapitałowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prosta_spółka_akcyjna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prosta_spółka_akcyjna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kapitałowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_jawna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_jawna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowo-akcyjna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowo-akcyjna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_partnerska"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_partnerska"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kapitałowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_z_ograniczoną_odpowiedzialnością"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_z_ograniczoną_odpowiedzialnością"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Wniesienie_wkładów"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Wniesienie_wkładów"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zakłady_ubezpieczeń"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zakłady_ubezpieczeń"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zawarcie_umowy_spółki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zawarcie_umowy_spółki"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#jest_prowadzony_przez"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Rejonowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#podlega_wpisowi"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#została_uregulowana_w"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prosta_spółka_akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_prowadzić_działalność"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Dowolna_niezabroniona_przepisami"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_prowadzić_działalność"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Działalność_bankowa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_prowadzić_działalność"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powszechne_towarzystwa_emerytalne"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_prowadzić_działalność"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zakłady_ubezpieczeń"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#podlega_wpisowi"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#została_uregulowana_w"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#podlega_wpisowi"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_jawna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#została_uregulowana_w"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_jawna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#podlega_wpisowi"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowa"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#została_uregulowana_w"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowa"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_regulowane"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowo-akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_regulowane"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowo-akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#podlega_wpisowi"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowo-akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#została_uregulowana_w"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowo-akcyjna"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#podlega_wpisowi"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_partnerska"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#została_uregulowana_w"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_partnerska"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#kapitał_wynosi"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_z_ograniczoną_odpowiedzialnością"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#5000zł"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_być_utworzona_przez"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_z_ograniczoną_odpowiedzialnością"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_fizyczna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_być_utworzona_przez"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_z_ograniczoną_odpowiedzialnością"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_prawna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#podlega_wpisowi"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_z_ograniczoną_odpowiedzialnością"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#została_uregulowana_w"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_z_ograniczoną_odpowiedzialnością"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+        <Literal>22 530 83 34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+        <Literal>Sąd Najwyższy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+        <Literal>Warszawa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Miejscowość"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+        <Literal>Warszawa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#NazwaSądu"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+        <Literal>Sąd Najwyższy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#TelefonSądu"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+        <Literal>22 530 83 34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#DataUchwalenia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2000-09-14T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#DataWejsciaWŻycie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#MiejscePublikacji"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+        <Literal>Dziennik Ustaw</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Treść"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_fizyczna"/>
+        <Literal>Każdy człowiek w chwili urodzenia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Treść"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_prawna"/>
+        <Literal>art. 33 Kodeksu cywilnego: &quot;Osobami prawnymi są Skarb Państwa i jednostki organizacyjne, którym przepisy szczególne przyznają osobowość prawną&quot;</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#AdresEmail"/>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#AdresWWW"/>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Adres_sądu"/>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Miejscowość"/>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#NazwaSądu"/>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#TelefonSądu"/>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#TelefonSądu"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#WartośćPrzedmiotuSporu"/>
+        <Class IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_przedmiotowy"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#AdresEmail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#AdresWWW"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Adres_sądu"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Miejscowość"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#NazwaSądu"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#TelefonSądu"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#WartośćPrzedmiotuSporu"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#DataUchwalenia"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#DataWejsciaWŻycie"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#MiejscePublikacji"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Treść"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#StatusOsoby</IRI>
+        <Literal>0 - osoba fizyczna
+1 - osoba prawna</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

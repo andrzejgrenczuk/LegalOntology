@@ -1,0 +1,799 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andrz/ontologies/2022/4/MetaOntologia_complete#"
+     xml:base="http://www.semanticweb.org/andrz/ontologies/2022/4/MetaOntologia_complete"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:PrawoSpolek="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#"
+     xmlns:PostepowanieCywilne="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#"
+     xmlns:MetaOntologiaPrawnicza="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/andrz/ontologies/2022/4/MetaOntologia_complete">
+        <rdfs:comment>Metaontologia prawnicza składająca z się z pomniejszych dziedzinowych i tematycznych ontologii</rdfs:comment>
+        <rdfs:comment>Ontologia prezentująca wybrany fragment rzeczywistości prawnej, skupionej wokół przepisów dotyczących przepisów prawnych regulujących prawo spółek handlowych.</rdfs:comment>
+        <rdfs:comment>Ontologia prezentująca zagadnienie postępowania cywilnego</rdfs:comment>
+        <owl:Author>Andrzej Greńczuk</owl:Author>
+        <owl:Author>mgr Andrzej Greńczuk</owl:Author>
+        <owl:University>Uniwersytet Ekonomiczny we Wrocławiu</owl:University>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.10</owl:versionInfo>
+        <owl:versionInfo>Andrzej Greńczuk</owl:versionInfo>
+        <owl:versionInfo>Uniwersytet Ekonomiczny we Wrocławiu</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Author -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#Author"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#University -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#University"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#jest_prowadzony_przez -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#jest_prowadzony_przez"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_częścią -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_częścią"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_regulowane -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_regulowane"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#kapitał_wynosi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#kapitał_wynosi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#mogą_się_odwoływać -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#mogą_się_odwoływać"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_być_utworzona_przez -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_być_utworzona_przez"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_prowadzić_działalność -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#może_prowadzić_działalność"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#określa_przepisy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#określa_przepisy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#podlega_wpisowi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#podlega_wpisowi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#została_uregulowana_w -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#została_uregulowana_w"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#AdresEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#AdresEmail">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#AdresWWW -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#AdresWWW">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Adres_sądu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Adres_sądu">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Miejscowość -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Miejscowość">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#NazwaSądu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#NazwaSądu">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#TelefonSądu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#TelefonSądu">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#DaneKontaktowe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#WartośćPrzedmiotuSporu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#WartośćPrzedmiotuSporu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_przedmiotowy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#DataUchwalenia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#DataUchwalenia">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#DataWejsciaWŻycie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#DataWejsciaWŻycie">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#MiejscePublikacji -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#MiejscePublikacji">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Treść -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Treść">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Apelacyjny -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Apelacyjny">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Okręgowy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Okręgowy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rejonowy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rejonowy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_działalności_sądu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_działalności_sądu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_podmiotowy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_podmiotowy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_działalności_sądu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_przedmiotowy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_przedmiotowy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Zakres_działalności_sądu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Akty_prawa_miejscowego -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Akty_prawa_miejscowego">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kapitałowe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kapitałowe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Konstytucja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Konstytucja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Likwidacja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Likwidacja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Przekształcanie"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Łączenie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podmioty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podmioty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#mogą_się_odwoływać"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_europejskie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_europejskie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zasieg_terytorialny"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_krajowe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_krajowe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zasieg_terytorialny"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_miedzynarodowe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_miedzynarodowe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zasieg_terytorialny"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_częścią"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#mogą_się_odwoływać"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Przekształcanie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Przekształcanie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ratyfikowana_umowa_międzynarodowa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ratyfikowana_umowa_międzynarodowa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Rozporządzenie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Rozporządzenie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ustawa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ustawa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Ustawa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#System_aktów_prawnych"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#jest_częścią"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_krajowe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#określa_przepisy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#określa_przepisy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zasieg_terytorialny -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zasieg_terytorialny"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Łączenie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Łączenie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Apelacyjny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Apelacyjny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Apelacyjny"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Najwyższy"/>
+        <PostepowanieCywilne:DaneKontaktowe>22 530 83 34</PostepowanieCywilne:DaneKontaktowe>
+        <PostepowanieCywilne:DaneKontaktowe>Sąd Najwyższy</PostepowanieCywilne:DaneKontaktowe>
+        <PostepowanieCywilne:DaneKontaktowe>Warszawa</PostepowanieCywilne:DaneKontaktowe>
+        <PostepowanieCywilne:Miejscowość>Warszawa</PostepowanieCywilne:Miejscowość>
+        <PostepowanieCywilne:NazwaSądu>Sąd Najwyższy</PostepowanieCywilne:NazwaSądu>
+        <PostepowanieCywilne:TelefonSądu>22 530 83 34</PostepowanieCywilne:TelefonSądu>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Okręgowy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Okręgowy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Okręgowy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Rejonowy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Rejonowy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rejonowy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Rodzaje_sądów"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Centralna_ewidencja_działalności_gospodarczej"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Dowolna_niezabroniona_przepisami -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Dowolna_niezabroniona_przepisami">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Działalność_bankowa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Działalność_bankowa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+        <PrawoSpolek:DataUchwalenia rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-09-14T00:00:00</PrawoSpolek:DataUchwalenia>
+        <PrawoSpolek:DataWejsciaWŻycie rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-01T00:00:00</PrawoSpolek:DataWejsciaWŻycie>
+        <PrawoSpolek:MiejscePublikacji>Dziennik Ustaw</PrawoSpolek:MiejscePublikacji>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Organy_Rejestrowe"/>
+        <MetaOntologiaPrawnicza:jest_prowadzony_przez rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#Sąd_Rejonowy"/>
+        <PrawoSpolek:podlega_wpisowi rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_fizyczna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_fizyczna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podmioty"/>
+        <PrawoSpolek:Treść>Każdy człowiek w chwili urodzenia</PrawoSpolek:Treść>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_prawna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_prawna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podmioty"/>
+        <PrawoSpolek:Treść>art. 33 Kodeksu cywilnego: &quot;Osobami prawnymi są Skarb Państwa i jednostki organizacyjne, którym przepisy szczególne przyznają osobowość prawną&quot;</PrawoSpolek:Treść>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podpisanie_statutu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Podpisanie_statutu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powszechne_towarzystwa_emerytalne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powszechne_towarzystwa_emerytalne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prosta_spółka_akcyjna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prosta_spółka_akcyjna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kapitałowe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <PrawoSpolek:została_uregulowana_w rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kapitałowe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <PrawoSpolek:może_prowadzić_działalność rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Dowolna_niezabroniona_przepisami"/>
+        <PrawoSpolek:może_prowadzić_działalność rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Działalność_bankowa"/>
+        <PrawoSpolek:może_prowadzić_działalność rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powszechne_towarzystwa_emerytalne"/>
+        <PrawoSpolek:może_prowadzić_działalność rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zakłady_ubezpieczeń"/>
+        <PrawoSpolek:podlega_wpisowi rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <PrawoSpolek:została_uregulowana_w rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_jawna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_jawna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <PrawoSpolek:podlega_wpisowi rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <PrawoSpolek:została_uregulowana_w rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <PrawoSpolek:podlega_wpisowi rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <PrawoSpolek:została_uregulowana_w rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowo-akcyjna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowo-akcyjna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <PrawoSpolek:jest_regulowane rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_akcyjna"/>
+        <PrawoSpolek:jest_regulowane rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_komandytowa"/>
+        <PrawoSpolek:podlega_wpisowi rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <PrawoSpolek:została_uregulowana_w rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_partnerska -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_partnerska">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osobowe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <PrawoSpolek:podlega_wpisowi rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <PrawoSpolek:została_uregulowana_w rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_z_ograniczoną_odpowiedzialnością -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Spółka_z_ograniczoną_odpowiedzialnością">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kapitałowe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Typy_spółek"/>
+        <PrawoSpolek:kapitał_wynosi rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#5000zł"/>
+        <PrawoSpolek:może_być_utworzona_przez rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_fizyczna"/>
+        <PrawoSpolek:może_być_utworzona_przez rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Osoba_prawna"/>
+        <PrawoSpolek:podlega_wpisowi rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Krajowy_Rejestr_Sądowy"/>
+        <PrawoSpolek:została_uregulowana_w rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Kodeks_spółek_handlowych"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Wniesienie_wkładów -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Wniesienie_wkładów">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zakłady_ubezpieczeń -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zakłady_ubezpieczeń">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Pozostałe_regulacje"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_handlowe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zawarcie_umowy_spółki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Zawarcie_umowy_spółki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Powstanie"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#Prawo_spółek_handlowych"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#5000zł -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek#5000zł"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/andrz/ontologies/2021/9/PostepowanieCywilne#StatusOsoby">
+        <rdfs:comment>0 - osoba fizyczna
+1 - osoba prawna</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

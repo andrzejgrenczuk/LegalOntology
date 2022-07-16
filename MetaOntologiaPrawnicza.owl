@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza">
+    <Prefix name="" IRI="http://www.semanticweb.org/andrz/ontologies/2021/9/MetaOntologiaPrawnicza#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -19,14 +20,14 @@
     <Import>http://www.semanticweb.org/andrz/ontologies/2021/9/PrawoSpolek</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal>Andrzej Greńczuk</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal>Metaontologia prawnicza składająca z się z pomniejszych dziedzinowych i tematycznych ontologii</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="owl:Author"/>
+        <Literal>Andrzej Greńczuk</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:University"/>
         <Literal>Uniwersytet Ekonomiczny we Wrocławiu</Literal>
     </Annotation>
     <Annotation>
